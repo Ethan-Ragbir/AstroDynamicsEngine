@@ -1,0 +1,27 @@
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+nbody
+*.exe
+*.out
+
+# Build directories
+build/
+bin/
+obj/
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Dependency directories (if using package managers)
+deps/
+libs/
