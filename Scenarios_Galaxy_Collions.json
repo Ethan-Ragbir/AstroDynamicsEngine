@@ -1,0 +1,60 @@
+{
+  "name": "Dwarf Galaxy Collision",
+  "description": "Two small galaxies approaching each other",
+  "particles": [
+    {
+      "position": [250, 300],
+      "velocity": [5, 0],
+      "mass": 50000.0,
+      "color": [255, 255, 100],
+      "name": "Galaxy A Core",
+      "fixed": false
+    },
+    {
+      "position": [550, 300],
+      "velocity": [-5, 0],
+      "mass": 40000.0,
+      "color": [255, 200, 150],
+      "name": "Galaxy B Core",
+      "fixed": false
+    }
+  ],
+  "procedural_particles": [
+    {
+      "type": "disk",
+      "center_ref": "Galaxy A Core",
+      "count": 100,
+      "inner_radius": 20,
+      "outer_radius": 80,
+      "mass_range": [1, 5],
+      "orbital_velocity_factor": 0.7,
+      "color": [150, 150, 255],
+      "random_z_velocity": 2.0
+    },
+    {
+      "type": "disk",
+      "center_ref": "Galaxy B Core",
+      "count": 80,
+      "inner_radius": 15,
+      "outer_radius": 60,
+      "mass_range": [1, 5],
+      "orbital_velocity_factor": 0.7,
+      "color": [255, 150, 150],
+      "random_z_velocity": 2.0
+    }
+  ],
+  "settings": {
+    "gravitational_constant": 1e-3,
+    "time_step": 0.01,
+    "softening": 2.0,
+    "trail_length": 50,
+    "adaptive_timestep": true,
+    "min_dt": 0.001,
+    "max_dt": 0.05
+  },
+  "camera": {
+    "center": [400, 300],
+    "zoom": 2.0
+  },
+  "note": "Procedural particle generation is a planned feature. For now, manually add particles or implement the procedural generation in the loader."
+}
