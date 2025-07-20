@@ -1,27 +1,129 @@
-# Compiled object files
+# Build directories
+build/
+cmake-build-*/
+out/
+bin/
+lib/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compiled Object files
+*.slo
+*.lo
 *.o
 *.obj
 
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
 # Executables
-nbody
 *.exe
 *.out
+*.app
+AstroDynamics2D
+AstroDynamics3D
 
-# Build directories
-build/
-bin/
-obj/
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Profiling
+*.prof
+*.gcov
+*.gcda
+*.gcno
+gmon.out
+callgrind.out.*
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Simulation output
+output/
+screenshots/
+recordings/
+*.mp4
+*.avi
+*.gif
+trajectories/
+*.csv
+*.dat
+
+# Documentation
+docs/html/
+docs/latex/
+doxygen_warnings.txt
+
+# Python (for analysis scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints/
 
 # Temporary files
 *.tmp
-*.log
-*.swp
+*.temp
+*.bak
+*.backup
+.cache/
 
-# IDE and editor files
-.vscode/
-.idea/
-*.sublime-*
+# OS generated files
+Thumbs.db
+.Trashes
+.Spotlight-V100
+.TemporaryItems
 
-# Dependency directories (if using package managers)
-deps/
-libs/
+# Package files
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# Configuration overrides (keep examples)
+config/user/*
+!config/user/example.json
