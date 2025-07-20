@@ -1,9 +1,10 @@
 # Build directories
 build/
+Build/
 cmake-build-*/
 out/
 bin/
-lib/
+obj/
 
 # IDE specific files
 .vscode/
@@ -12,11 +13,26 @@ lib/
 *.swo
 *~
 .DS_Store
+
+# Visual Studio
 .vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
 
 # Compiled Object files
 *.slo
@@ -47,8 +63,14 @@ lib/
 *.exe
 *.out
 *.app
-AstroDynamics2D
-AstroDynamics3D
+AstroDynamicsEngine
+AstroDynamicsEngine.exe
+
+# Debug files
+*.dSYM/
+*.pdb
+*.ilk
+*.idb
 
 # CMake
 CMakeLists.txt.user
@@ -63,67 +85,53 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Package manager directories
+vcpkg_installed/
+conan/
+.conan/
 
-# Profiling
-*.prof
-*.gcov
-*.gcda
-*.gcno
-gmon.out
-callgrind.out.*
+# Documentation
+docs/html/
+docs/latex/
+doxygen/
 
 # Logs and databases
 *.log
 *.sql
 *.sqlite
 
-# Simulation output
-output/
-screenshots/
-recordings/
-*.mp4
-*.avi
-*.gif
-trajectories/
-*.csv
-*.dat
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Documentation
-docs/html/
-docs/latex/
-doxygen_warnings.txt
-
-# Python (for analysis scripts)
-__pycache__/
-*.py[cod]
-*$py.class
-*.egg-info/
-.ipynb_checkpoints/
-
-# Temporary files
-*.tmp
-*.temp
+# Backup files
 *.bak
 *.backup
-.cache/
+*~
 
-# OS generated files
-Thumbs.db
-.Trashes
-.Spotlight-V100
-.TemporaryItems
+# Performance profiling
+*.prof
+callgrind.out.*
+perf.data
+perf.data.old
 
-# Package files
-*.tar.gz
-*.zip
-*.7z
-*.rar
+# Core dumps
+core
+core.*
 
-# Configuration overrides (keep examples)
-config/user/*
-!config/user/example.json
+# Simulation output
+output/
+results/
+*.csv
+*.dat
+*.hdf5
+
+# Temporary files
+tmp/
+temp/
+*.tmp
