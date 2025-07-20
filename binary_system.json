@@ -1,0 +1,54 @@
+{
+  "name": "Binary Star System with Planets",
+  "description": "Two stars orbiting their common center of mass with planetary systems",
+  "particles": [
+    {
+      "position": [350, 300],
+      "velocity": [0, -25],
+      "mass": 3000.0,
+      "color": [255, 255, 100],
+      "name": "Star Alpha",
+      "fixed": false
+    },
+    {
+      "position": [450, 300],
+      "velocity": [0, 25],
+      "mass": 2500.0,
+      "color": [255, 200, 150],
+      "name": "Star Beta",
+      "fixed": false
+    },
+    {
+      "position": [250, 300],
+      "velocity": [0, -45],
+      "mass": 10.0,
+      "color": [100, 150, 255],
+      "name": "Planet A1"
+    },
+    {
+      "position": [550, 300],
+      "velocity": [0, 40],
+      "mass": 15.0,
+      "color": [255, 100, 100],
+      "name": "Planet B1"
+    },
+    {
+      "position": [350, 450],
+      "velocity": [-35, -25],
+      "mass": 5.0,
+      "color": [150, 255, 150],
+      "name": "Planet A2"
+    }
+  ],
+  "settings": {
+    "gravitational_constant": 6.67430e-2,
+    "time_step": 0.005,
+    "softening": 0.5,
+    "trail_length": 200,
+    "adaptive_timestep": false
+  },
+  "camera": {
+    "center": [400, 300],
+    "zoom": 1.0
+  }
+}
