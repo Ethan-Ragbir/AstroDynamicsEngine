@@ -1,0 +1,66 @@
+{
+  "name": "Inner Solar System (Simplified)",
+  "description": "A simplified model of the inner solar system with scaled distances",
+  "particles": [
+    {
+      "position": [400, 300],
+      "velocity": [0, 0],
+      "mass": 10000.0,
+      "color": [255, 255, 0],
+      "name": "Sun",
+      "fixed": true
+    },
+    {
+      "position": [440, 300],
+      "velocity": [0, 58],
+      "mass": 5.0,
+      "color": [169, 169, 169],
+      "name": "Mercury"
+    },
+    {
+      "position": [480, 300],
+      "velocity": [0, 45],
+      "mass": 20.0,
+      "color": [255, 198, 73],
+      "name": "Venus"
+    },
+    {
+      "position": [520, 300],
+      "velocity": [0, 40],
+      "mass": 25.0,
+      "color": [70, 130, 255],
+      "name": "Earth"
+    },
+    {
+      "position": [525, 300],
+      "velocity": [0, 43],
+      "mass": 0.5,
+      "color": [200, 200, 200],
+      "name": "Moon"
+    },
+    {
+      "position": [580, 300],
+      "velocity": [0, 32],
+      "mass": 10.0,
+      "color": [255, 87, 51],
+      "name": "Mars"
+    },
+    {
+      "position": [700, 300],
+      "velocity": [0, 22],
+      "mass": 100.0,
+      "color": [255, 215, 180],
+      "name": "Jupiter"
+    }
+  ],
+  "settings": {
+    "gravitational_constant": 5e-2,
+    "time_step": 0.002,
+    "softening": 0.1,
+    "trail_length": 500
+  },
+  "camera": {
+    "center": [400, 300],
+    "zoom": 1.5
+  }
+}
